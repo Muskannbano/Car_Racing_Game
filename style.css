@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.hide {
+    display: none;
+}
+.carGame {
+    width: 100%;
+    height: 100%;
+    background-image: url('bg8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.car, .enemy {
+    width: 12vw;
+    max-width: 50px;
+    height: 17vw;
+    max-height: 70px;
+    position: absolute;
+    bottom: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.car {
+    background-image: url('car.png');
+}
+.enemy1 { background-image: url('enemy.png'); }
+.enemy2 { background-image: url('enemy.png'); }
+.enemy3 { background-image: url('enemy.png'); }
+.lines {
+    width: 2vw;
+    max-width: 10px;
+    height: 25vw;
+    max-height: 100px;
+    background: white;
+    position: absolute;
+    margin-left: 48%;
+}
+.gameArea {
+    width: 90vw;
+    max-width: 400px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+    background: #2d3436;
+}
+.score {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: #10ac84;
+    width: 70vw;
+    max-width: 300px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 5px 5px #777;
+}
+#toggleSound {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    z-index: 10;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.startScreen {
+    position: absolute;
+    background-color: #ee5253;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 5px #777;
+    text-transform: uppercase;
+}
+.restartBtn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #1dd1a1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 80%;
+}
+.speedBoost {
+    box-shadow: 0 0 20px #00ffcc;
+    transition: box-shadow 0.2s ease;
+}
+
+@media (max-width: 480px) {
+    .score {
+        font-size: 0.9rem;
+    }
+    .restartBtn {
+        width: 80%;
+        font-size: 1rem;
+    }
+    #toggleSound {
+        top: 5px;
+        right: 10px;
+        font-size: 1.2rem;
+    }
+}
